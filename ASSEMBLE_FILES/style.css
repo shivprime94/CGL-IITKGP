@@ -1,0 +1,319 @@
+/* Home and menu */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Didact Gothic');
+@import url('https://fonts.googleapis.com/css?family=Saira');
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif-x;
+}
+.banner {
+  position: relative;
+}
+.banner .display-2 {
+  position: absolute;
+  top: 45%;
+  left: 40%;
+  color: #ffffffee;
+  font-size: 30px;
+  letter-spacing: 0.1em;
+}
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'poppins', Arial;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, #6c0d45 0%, #390022 100%);
+}
+
+.card {
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(51, 48, 49, 0.5);
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 0.5s all;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.card .info h1 {
+  margin: 0;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+body {
+  background-color: gray;
+}
+div.upper {
+  position: relative;
+}
+div.upper .menubutton {
+  position: absolute;
+  font-size: 25px;
+  right: 8%;
+  top: 40px;
+}
+div.upper .menubutton a {
+  color: white;
+}
+.main {
+  position: relative;
+  top: -40px;
+}
+
+div.upper .cglimage {
+  height: 130px;
+  width: 130px;
+}
+.heading {
+  text-align: center;
+  font-size: 50px;
+}
+.cards div img {
+  height: 480px;
+  width: 320px;
+  border-radius: 32px;
+}
+.cards div {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.cards {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-size: 25px;
+  padding-left: 40px;
+  padding-right: 50px;
+}
+
+.cards div :hover {
+  position: relative;
+  top: -2px;
+}
+
+@media all and (max-width: 700px) {
+  h4 {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    font-size: 15px;
+  }
+  .cards div img {
+    height: 400px;
+    width: 260px;
+    border-radius: 32px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 40px;
+  }
+  .main {
+    position: relative;
+    top: -20px;
+  }
+}
+
+/* Yashi: Commented the part that doest work well with bootstarp */
+.menu {
+  font-family: Saira;
+  font-size: 30px;
+  color: white;
+}
+.nav-item {
+  font-size: 22px !important;
+  font-family: 'Didact Gothic';
+}
+.nav-item :hover {
+  color: #ec008c !important;
+}
+.nav-link {
+  padding-bottom: 0px;
+}
+.nav {
+  margin-top: 156px;
+  height: 100% !important;
+  position: fixed;
+  background-color: rgba(254, 254, 255, 0.164);
+}
+.selected-tab {
+  background-color: transparent !important;
+  color: black !important;
+}
+.nav ul {
+  display: inline-block;
+  list-style-type: none;
+  /* margin-top: 100px; */
+  height: 100%;
+  padding-left: 3%;
+}
+
+.vertical-nav {
+  position: fixed;
+  /* width: 226.5px; */
+  padding-left: 5%;
+  background-color: rgba(254, 254, 255, 0.164) !important;
+}
+.center {
+  /* display: inline; */
+  float: right;
+  /* margin-top: 100px; */
+  width: 50%;
+  margin-left: 2000px !important;
+}
+
+li a {
+  color: white !important;
+}
+a {
+  color: white !important;
+}
+
+body {
+  /* background-image: url(/Images/background.png);
+    background-attachment: fixed; */
+  background-color: #280738;
+  font-size: 22px;
+  margin: 0;
+}
+h1 {
+  padding-top: 2%;
+  color: white;
+  text-align: center;
+  font-family: Saira;
+  font-size: 40px;
+}
+h2 {
+  font-family: Saira;
+  font-size: 35px;
+  padding: 2%;
+  color: white;
+  text-align: center;
+}
+h3 {
+  font-family: Saira;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.Gallery {
+  margin-left: 25%;
+  width: 75%;
+  margin-right: 0px;
+}
+img {
+  display: inline;
+}
+.Gallery-images img {
+  max-width: 100%;
+  transition: transform 0.3s;
+  opacity: 1;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+/* .Gallery-images img:hover{
+    transform: scale(1.3);
+} */
+.container:hover img {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+.Gallery-images {
+  opacity: 1;
+  width: 100%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+/* .imgsInter{
+    margin: 2%;
+    text-align: center;
+}
+
+.imgsInter li{
+    display: inline-block;
+    height: 20%;
+    margin: 50px 7%;
+}
+
+.imgsInter li img{
+    max-width: 370px;
+    transition: transform 0.5s;
+}
+
+.imgsInter li img:hover{
+    transform: scale(1.3);
+    filter: grayscale(75%);
+} */
